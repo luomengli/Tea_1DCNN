@@ -241,32 +241,32 @@ activation_function = activation_function_map[ params[0]]
 def plot_tsne(features, labels, fold, save_path):
     features = np.array(features)
     colors = [
-        '#1f77b4',  # 蓝色
-        '#ff7f0e',  # 橙色
-        '#2ca02c',  # 绿色
-        '#d62728',  # 红色
-        '#9467bd',  # 紫色
-        '#8c564b',  # 棕色
-        '#e377c2',  # 粉色
-        '#7f7f7f',  # 灰色
-        '#bcbd22',  # 黄绿色
-        '#17becf',  # 青色
-        '#f7b733',  # 明亮的橙色
-        '#f45d42',  # 鲜红色
-        '#e0e0e0',  # 浅灰色
-        '#ffb74d',  # 浅橙色
-        '#64b5f6',  # 浅蓝色
-        '#81c784',  # 浅绿色
-        '#ba68c8',  # 浅紫色
-        '#ff8a65',  # 浅红色
-        '#90caf9',  # 浅青色
-        '#a5d6a7',  # 浅黄绿色
-        '#ce93d8',  # 浅紫红色
-        '#ffcc80',  # 浅金色
-        '#d7ccc8',  # 浅棕色
-        '#cfd8dc',  # 浅蓝灰色
-        '#ffb300',  # 亮金色
-        '#8d6e63'  # 深棕色
+        '#1f77b4', 
+        '#ff7f0e',  
+        '#2ca02c',  
+        '#d62728',  
+        '#9467bd',  
+        '#8c564b',  
+        '#e377c2',  
+        '#7f7f7f',  
+        '#bcbd22',  
+        '#17becf',  
+        '#f7b733',  
+        '#f45d42', 
+        '#e0e0e0',  
+        '#ffb74d',  
+        '#64b5f6',  
+        '#81c784',  
+        '#ba68c8',  
+        '#ff8a65',  
+        '#90caf9',  
+        '#a5d6a7',  
+        '#ce93d8',  
+        '#ffcc80',  
+        '#d7ccc8',  
+        '#cfd8dc',  
+        '#ffb300',  
+        '#8d6e63'  
     ]
     tsne = TSNE(n_components=2, random_state=42, perplexity=50)
     tsne_result = tsne.fit_transform(features)
@@ -290,32 +290,32 @@ def plot_tsne_3D(features, labels, fold, save_path):
     features = np.array(features)  # 将列表转换为 NumPy 数组
     # labels = np.array(labels)  # 将列表转换为 NumPy 数组
     colors = [
-        '#1f77b4',  # 蓝色
-        '#ff7f0e',  # 橙色
-        '#2ca02c',  # 绿色
-        '#d62728',  # 红色
-        '#9467bd',  # 紫色
-        '#8c564b',  # 棕色
-        '#e377c2',  # 粉色
-        '#7f7f7f',  # 灰色
-        '#bcbd22',  # 黄绿色
-        '#17becf',  # 青色
-        '#f7b733',  # 明亮的橙色
-        '#f45d42',  # 鲜红色
-        '#e0e0e0',  # 浅灰色
-        '#ffb74d',  # 浅橙色
-        '#64b5f6',  # 浅蓝色
-        '#81c784',  # 浅绿色
-        '#ba68c8',  # 浅紫色
-        '#ff8a65',  # 浅红色
-        '#90caf9',  # 浅青色
-        '#a5d6a7',  # 浅黄绿色
-        '#ce93d8',  # 浅紫红色
-        '#ffcc80',  # 浅金色
-        '#d7ccc8',  # 浅棕色
-        '#cfd8dc',  # 浅蓝灰色
-        '#ffb300',  # 亮金色
-        '#8d6e63'  # 深棕色
+        '#1f77b4',  
+        '#ff7f0e',  
+        '#2ca02c',  
+        '#d62728', 
+        '#9467bd',  
+        '#8c564b',  
+        '#e377c2',  
+        '#7f7f7f',  
+        '#bcbd22', 
+        '#17becf',
+        '#f7b733',  
+        '#f45d42',  
+        '#e0e0e0',  
+        '#ffb74d',  
+        '#64b5f6',  
+        '#81c784',  
+        '#ba68c8', 
+        '#ff8a65',  
+        '#90caf9',  
+        '#a5d6a7',  
+        '#ce93d8',  
+        '#ffcc80', 
+        '#d7ccc8',  
+        '#cfd8dc',  
+        '#ffb300',
+        '#8d6e63'  
     ]
     tsne = TSNE(n_components=3, random_state=42, perplexity=50)
     tsne_result = tsne.fit_transform(features)
